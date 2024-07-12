@@ -11,7 +11,8 @@ Para instalar Open Tecopos, sigue estos pasos (muy generales):
 1. Clona el repositorio utilizando Git.
 2. Ejecuta los comandos necesarios para instalar node y compilar cada proyecto.
 3. Asegúrate de tener la versión correspondiente de Node (Probado en 18 y 20).
-
+## FAQ
+De momento se dará acceso a las aplicaciones de administración, el resto de repositorios(APP Móvil...etc) se irán liberando a medida que crezca la comunidad
 ## ✨ Contribuyendo
 
 ¡Todos son bienvenidos a ayudarnos a mejorar este proyecto Si tienes alguna idea o mejora que crees que puede beneficiar a la comunidad, no dudes en abrir un pull request.
