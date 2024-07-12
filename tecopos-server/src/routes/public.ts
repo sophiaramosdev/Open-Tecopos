@@ -1,0 +1,212 @@
+import { Router } from "express";
+
+import {
+    checkDisposability,
+    findAllBusinessCategories,
+    findAllBusinesses,
+    findAllCountries,
+    findAllMunicipalities,
+    findAllProvinces,
+    getBusiness,
+    getProductVariations,
+    getPublicGeneralConfigs,
+    myActivesCategories,
+    myProductsForSale,
+    newExternalReservation2,
+} from "../controllers/public";
+import { originValidator } from "../middlewares/originValidator";
+
+const routerPublic = Router();
+
+//Configs
+routerPublic.get(
+    "/configs",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    getPublicGeneralConfigs
+);
+
+//Business
+routerPublic.get(
+    "/business/:slug",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    getBusiness
+);
+
+routerPublic.get(
+    "/business/",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    findAllBusinesses
+);
+
+routerPublic.get(
+    "/businesscategories",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    findAllBusinessCategories
+);
+
+//Products
+routerPublic.get(
+    "/products/business/:slug",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    myProductsForSale
+);
+routerPublic.get(
+    "/variation/product/:id",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    getProductVariations
+);
+
+//Categories
+routerPublic.get(
+    "/categories/:slug",
+    [
+        originValidator([
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Admin",
+            "Tecopos-Marketplace",
+        ]),
+    ],
+    myActivesCategories
+);
+
+//Data
+routerPublic.get(
+    "/countries",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+            "Tecopos-SinTerceros",
+        ]),
+    ],
+    findAllCountries
+);
+
+routerPublic.get(
+    "/provinces",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+            "Tecopos-SinTerceros",
+        ]),
+    ],
+    findAllProvinces
+);
+
+routerPublic.get(
+    "/municipalities",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-ShopApk",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+            "Tecopos-SinTerceros",
+        ]),
+    ],
+    findAllMunicipalities
+);
+routerPublic.post(
+    "/new-external-reservation/:slug",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+            "Tecopos-SinTerceros",
+        ]),
+    ],
+    newExternalReservation2
+);
+routerPublic.get(
+    "/check-disposability/:slug",
+    [
+        originValidator([
+            "Tecopos-Admin",
+            "Tecopos",
+            "Tecopos-Management",
+            "Tecopos-Shop",
+            "Tecopos-Landing",
+            "Tecopos-Terminal",
+            "Tecopos-Marketplace",
+            "Tecopos-SinTerceros",
+        ]),
+    ],
+    checkDisposability
+);
+
+export default routerPublic;

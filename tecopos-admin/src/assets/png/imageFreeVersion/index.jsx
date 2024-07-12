@@ -1,0 +1,9 @@
+export { default as Almacenes } from "./Almacenes.png";
+export { default as CiclosEconómicos } from "./CiclosEconómicos.png";
+export { default as inicio } from "./inicio.png";
+export { default as Procesados } from "./Procesados.png";
+export { default as PuntosDeVenta } from "./PuntosDeVenta.png";
+export { default as RecursosHumanos } from "./RecursosHumanos.png";
+export { default as RegionesDeEnvío } from "./RegionesDeEnvío.png";
+export { default as Reportes } from "./Reportes.png";
+export { default as SistemaDePrecios } from "./SistemaDePrecios.png";

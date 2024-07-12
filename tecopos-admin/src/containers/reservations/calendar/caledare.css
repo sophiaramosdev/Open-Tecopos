@@ -1,0 +1,109 @@
+/* calendar.css
+
+/* Resetear estilos predeterminados de React Big Calendar */
+/* .rbc-calendar {
+  @apply m-0 p-0; 
+} */
+
+/* Elimina los estilos predeterminados de los encabezados del calendario */
+/* .rbc-calendar .rbc-header {
+  @apply bg-transparent border-none p-0 m-0; 
+} */
+
+/* Aplica estilos de Tailwind CSS para el encabezado del mes */
+/* .rbc-month-header {
+  @apply flex rounded-md bg-slate-700; 
+}
+.rbc-week-view .rbc-week-header {
+  @apply flex rounded-md bg-slate-700;
+} */
+/* Elimina los estilos predeterminados de las celdas del calendario */
+/* .rbc-calendar .rbc-month-row,
+.rbc-calendar .rbc-header + .rbc-month-row,
+.rbc-calendar .rbc-date-cell {
+  @apply border-none p-0 m-0; /* Aplica bordes, márgenes y relleno de 0 
+} */
+/* .rbc-time-header{
+  @apply bg-slate-700
+} */
+/* .rbc-day-bg{
+  @apply bg-slate-700
+} */
+/* .rbc-event,
+.rbc-day-slot
+  .rbc-background-event
+  .rbc-event.rbc-selected
+  .rbc-selected
+  .rbc-event-allday
+  .rbc-event-continues-after {
+  @apply bg-transparent border-none;
+}  */
+
+.rbc-header {
+  /* font-size: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px !important; */
+  @apply bg-slate-700 text-white border-none border-transparent border-b-0 rounded-t-md  p-4 flex justify-center items-center;
+}
+.rbc-header > :first-child {
+  @apply rounded-tl-md rounded-bl-md;
+}
+.rbc-header > :last-child {
+  @apply rounded-br-md rounded-tr-md;
+}
+.rbc-header + .rbc-header {
+  @apply bg-slate-700 text-white border-none p-1 p-0;
+}
+/* .rbc-allday-cell {
+  display: none;
+}  */
+
+.rbc-month-header {
+  @apply bg-slate-700 rounded-t-md ;
+}
+/* .rbc-time-header-cell .rbc-today {
+  @apply bg-slate-700
+} */
+
+/* .rbc-time-slot {
+  @apply bg-slate-700
+} */
+
+/* .rbc-time-slot:not(.rbc-today .rbc-time-slot) {
+  background-color: #eff4f7;
+} */
+
+/* .rbc-event-content{
+  @apply  h-fit bg-slate-50
+} */
+/*Event Styles*/
+.rbc-event{
+  @apply bg-none text-black
+}
+.rbc-event,
+.rbc-background-event {
+  z-index: 2;
+  padding: 0px !important;
+  border: none !important;
+  background-color: transparent;
+  background: none;
+}
+
+/* .rbc-event-label {
+  display: none !important;
+} */
+
+/* .rbc-events-container {
+  width: 100% !important;
+} */
+
+/*Timeslots Customization*/
+/* .rbc-day-slot .rbc-time-slot:after {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #fbb3ec;
+  display: block;
+  @apply bg-white
+} */
