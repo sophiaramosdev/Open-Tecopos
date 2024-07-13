@@ -1,0 +1,36 @@
+.doughnutChart{
+   
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+}
+.barChart{
+   
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    
+    width: auto;
+    height: auto;
+}
+.divChart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+}
+.titleChart{
+    text-align: left;
+    font-size:  1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 600;
+    
+}

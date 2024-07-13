@@ -1,0 +1,109 @@
+.divHeader{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.divCol1{
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 10px;
+    
+    width: 14rem;
+    background-color: rgb(255, 255, 255);
+   padding: 10px 16px 10px 16px;
+   
+    border-radius:  8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 2rem;
+}
+.divCol2{
+    float: inline-end;
+width: 60rem;
+}
+.divTitle{
+display: flex;
+margin-top: 10px;
+margin-bottom: 10px;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.div-filter{
+    display: flex;
+    flex-direction: row;
+  
+}
+.btn-filter{ 
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+    align-self:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .btnModal{
+    display:flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+    width: 12rem;
+    text-align: center;
+    
+  }
+
+  /* sasa*/
+  .button-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .main-button {
+    background-color: #ffffff;
+    
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin-left: 8px;
+  }
+  
+  .row-container {
+    display: flex;
+  }
+  
+  .sub-button {
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expanded {
+    width: 200px; /* Ancho expandido */
+  }
+  .buttonAccount{
+    border-color: white;
+  border-right-color: #495057;
+  border-width: 2px;
+  padding-right: 1.4rem;
+  }

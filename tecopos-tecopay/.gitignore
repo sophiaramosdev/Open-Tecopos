@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/docs
+/public
+.env
+.idea
+.vscode/settings.json
+

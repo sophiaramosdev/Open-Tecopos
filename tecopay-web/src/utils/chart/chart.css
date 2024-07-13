@@ -1,0 +1,115 @@
+.dashboard-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+  
+  .filter-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .data-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+   
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .modal-container {
+    position: absolute;
+    top: 100%; /* Posición debajo del botón */
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .btnModal{
+    display:grid;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 7rem;
+    position: absolute;
+    text-align: center;
+  }
+  .btn{ 
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 7rem;
+    text-align: center;
+    align-self:center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .date-div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+     display: flex;
+     justify-content: space-evenly;
+     width: 8rem;
+     align-self:center;
+    text-align: center;
+   
+  }
+  .divNumbHeader{
+text-align: center;
+ width: auto;
+  border-right-width:2px;
+  border-color: #c1c1c1;
+  border-right-width:2px;
+  border-color: #c1c1c1;
+  padding-right: 16px;
+  }
+  .divNumbHeader1{
+    text-align: center;
+    width: auto;
+    border-color: #c1c1c1;
+    padding-right: 16px;
+    }
+    .pTotal{
+     font-size: 0.8rem;
+    }
+    .pNum{
+     
+       font-size: 1.6rem;
+      font-weight: bold;
+    }
+   
+    .divporciento{
+        margin-top: 0.5rem;
+    display: flex;
+    justify-content:space-evenly;
+    }
