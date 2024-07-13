@@ -38,8 +38,8 @@ Open Tecopos está licenciado bajo los términos de la licencia MIT con una impo
 ## 🙏 Créditos
 
 |Lino|Diana|TECOPOS|
-|--|--|---|
-|Agradecido con nuestro mexicano favorito por el aporte|Muchas gracias a Diana, la cual nos a acompañado durante el recopilatorio de este repositorio|Y obiamente con el equipo de [TECOPOS](https://www.tecopos.com/)|...
+|--|--|--|---|
+|Agradecido con nuestro mexicano favorito por el aporte|Muchas gracias a Diana, la cual nos a acompañado durante el recopilatorio de este repositorio|Gracias a Orlando quien fue el último en sumarse pero no el menos importante|Y obiamente con el equipo de [TECOPOS](https://www.tecopos.com/)|...
 
 ## 📄 Futuro
 
